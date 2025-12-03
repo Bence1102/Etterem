@@ -1,7 +1,6 @@
 package Model;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Asztal {
     private String nev;
@@ -16,12 +15,21 @@ public class Asztal {
         return nev;
     }
 
-    public List<Etel> getEtelek() {
+    public ArrayList<Etel> getEtelek() {
         return etelek;
     }
-
-    public void hozzaadEtel(Etel e) {
-        etelek.add(e);
+    
+    public void EtelLista(Etel etel){
+        etelek.add(etel);
+    
+    }
+    
+    public int osszeg(){
+        int sum = 0;
+        for (Etel e : etelek) {
+            sum += e.getAr();
+        }
+        return sum;
     }
 }
 
