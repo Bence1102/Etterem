@@ -6,8 +6,7 @@ import java.util.ArrayList;
 
 public class EtteremNezet {
 
-    public void EtteremNezet(ArrayList<Asztal> asztalok) {
-        
+    public void kiir(ArrayList<Asztal> asztalok) {  
         for (Asztal a : asztalok) {
             System.out.println(a.getNev());
             System.out.println("-----------------------");
